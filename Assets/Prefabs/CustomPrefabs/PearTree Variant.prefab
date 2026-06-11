@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3482485554154014942, guid: af1ce4fbc26751a489d0b98b394a0914, type: 3}
+      propertyPath: m_TagString
+      value: Fruit
+      objectReference: {fileID: 0}
     - target: {fileID: 4260289272847258212, guid: af1ce4fbc26751a489d0b98b394a0914, type: 3}
       propertyPath: m_LocalScale.x
       value: 4.81222
@@ -172,6 +176,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3482485554154014942, guid: af1ce4fbc26751a489d0b98b394a0914, type: 3}
+      propertyPath: m_TagString
+      value: Fruit
+      objectReference: {fileID: 0}
     - target: {fileID: 4260289272847258212, guid: af1ce4fbc26751a489d0b98b394a0914, type: 3}
       propertyPath: m_LocalScale.x
       value: 4.81222
@@ -327,6 +335,10 @@ PrefabInstance:
     - target: {fileID: 3482485554154014942, guid: af1ce4fbc26751a489d0b98b394a0914, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482485554154014942, guid: af1ce4fbc26751a489d0b98b394a0914, type: 3}
+      propertyPath: m_TagString
+      value: Fruit
       objectReference: {fileID: 0}
     - target: {fileID: 4260289272847258212, guid: af1ce4fbc26751a489d0b98b394a0914, type: 3}
       propertyPath: m_LocalScale.x

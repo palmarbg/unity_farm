@@ -32,8 +32,8 @@ public class CameraFollow : MonoBehaviour
     {
         Vector3 pos = new(_cameraTarget.position.x, _cameraHeight, _cameraTarget.position.z);
         Vector3 direction = _cameraTarget.transform.TransformVector(Vector3.back);
-        transform.parent.position = Vector3.MoveTowards(transform.parent.position, pos + _cameraDistance * direction, Time.deltaTime / _cameraSmoothing);
+        transform.position = Vector3.MoveTowards(transform.position, pos + _cameraDistance * direction, Time.deltaTime / _cameraSmoothing);
 
-        transform.parent.rotation = Quaternion.LookRotation(_cameraTarget.position - transform.parent.position);
+        transform.rotation = Quaternion.LookRotation(_cameraTarget.position - transform.position);
     }
 }

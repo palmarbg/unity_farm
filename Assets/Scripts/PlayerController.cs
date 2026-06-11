@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
@@ -8,6 +9,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     private float _rotationSpeed = 280.0f;
+
+    public UnityEvent OnFruitPickedUp;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,19 +23,28 @@ public class PlayerController : MonoBehaviour
     {
         if (Keyboard.current.wKey.isPressed)
         {
-            transform.parent.Translate(Vector3.forward * Time.deltaTime * _movementSpeed, Space.Self);
+            transform.Translate(Vector3.forward * Time.deltaTime * _movementSpeed, Space.Self);
         }
         if (Keyboard.current.sKey.isPressed)
         {
-            transform.parent.Translate(Vector3.back * Time.deltaTime * _movementSpeed, Space.Self);
+            transform.Translate(Vector3.back * Time.deltaTime * _movementSpeed, Space.Self);
         }
         if (Keyboard.current.aKey.isPressed)
         {
-            transform.parent.Rotate(Vector3.down, Time.deltaTime * _rotationSpeed, Space.Self);
+            transform.Rotate(Vector3.down, Time.deltaTime * _rotationSpeed, Space.Self);
         }
         if (Keyboard.current.dKey.isPressed)
         {
-            transform.parent.Rotate(Vector3.up, Time.deltaTime * _rotationSpeed, Space.Self);
+            transform.Rotate(Vector3.up, Time.deltaTime * _rotationSpeed, Space.Self);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Fruit"))
+        {
+            Debug.Log("YEEEEEEEEEAAAAAAAAHH");
+            OnFruitPickedUp.Invoke();
         }
     }
 }
