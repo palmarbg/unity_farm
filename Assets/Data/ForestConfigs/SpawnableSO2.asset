@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpawnableSO
   seed: 42
   _spawnables:
-  - {fileID: 2219802007937382221, guid: 61deb8bd25e74944bb4fd46acf55b8d7, type: 3}
+  - {fileID: 7101360391040978390, guid: 8d8b98dc6b7a83340b1025a50138c653, type: 3}
