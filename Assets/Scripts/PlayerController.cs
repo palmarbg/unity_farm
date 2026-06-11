@@ -43,7 +43,6 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Fruit"))
         {
-            Debug.Log("YEEEEEEEEEAAAAAAAAHH");
             OnFruitPickedUp.Invoke();
         }
     }

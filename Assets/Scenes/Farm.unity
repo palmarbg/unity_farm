@@ -3592,9 +3592,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8806145551292872681, guid: 6f1ec9dd1febb2e45b5972f5088e150e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 954602955}
-    - targetCorrespondingSourceObject: {fileID: 8806145551292872681, guid: 6f1ec9dd1febb2e45b5972f5088e150e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 954602956}
   m_SourcePrefab: {fileID: 100100000, guid: 6f1ec9dd1febb2e45b5972f5088e150e, type: 3}
 --- !u!1 &668163620
 GameObject:
@@ -4823,29 +4820,6 @@ MonoBehaviour:
   OnFruitPickedUp:
     m_PersistentCalls:
       m_Calls: []
---- !u!136 &954602956
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954602953}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Height: 3
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &964587122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10434,6 +10408,8 @@ GameObject:
   - component: {fileID: 4036905419733193029}
   - component: {fileID: 2297134184912332175}
   - component: {fileID: 789327626}
+  - component: {fileID: 4036905419733193030}
+  - component: {fileID: 4036905419733193031}
   m_Layer: 0
   m_Name: Bus
   m_TagString: Untagged
@@ -11910,6 +11886,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351829628625912922}
   m_Mesh: {fileID: 2206897358531329318, guid: bcf3fad3ea816429ca51a55da7b50e66, type: 3}
+--- !u!114 &4036905419733193030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351829628625912922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a998d882f71a741b178e9bbdcc2bb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BusController
+  _maxSpeed: 10
+  _acceleration: 2.5
+--- !u!54 &4036905419733193031
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351829628625912922}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &4037375461111699270
 BoxCollider:
   m_ObjectHideFlags: 0
