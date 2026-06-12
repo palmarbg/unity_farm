@@ -6513,6 +6513,7 @@ GameObject:
   - component: {fileID: 1279847821}
   - component: {fileID: 1279847820}
   - component: {fileID: 1279847819}
+  - component: {fileID: 1279847823}
   m_Layer: 0
   m_Name: River
   m_TagString: Untagged
@@ -6613,6 +6614,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1279553477}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1279847823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279847818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fe33de3d4b770e4092fb767b2f0e4ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UVScroller
+  _uvSpeed: {x: 0.5, y: 0.1}
 --- !u!4 &1287579604 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4208138724899078359, guid: 71899f934be2140f68240388e63573cd, type: 3}
