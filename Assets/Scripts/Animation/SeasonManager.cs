@@ -13,6 +13,12 @@ public class SeasonManager : MonoBehaviour
     [SerializeField]
     private Material _snowMaterial;
 
+    [SerializeField]
+    private Material _summerSkyMaterial;
+
+    [SerializeField]
+    private Material _winterSkyMaterial;
+
     private enum Season
     {
         Summer, Winter
@@ -70,5 +76,12 @@ public class SeasonManager : MonoBehaviour
         {
             meshRenderer.material = mat;
         }
+
+        RenderSettings.skybox = _season switch
+        {
+            Season.Summer => _summerSkyMaterial,
+            Season.Winter => _winterSkyMaterial,
+            _ => throw new System.NotImplementedException()
+        };
     }
 }
