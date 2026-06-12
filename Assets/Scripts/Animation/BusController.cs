@@ -26,8 +26,6 @@ public class BusController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(_state);
-
         if (_state == BusMovingState.SpeedUp || _state == BusMovingState.LeaveStop)
         {
             _speed = Mathf.Min(_maxSpeed, _speed + _acceleration * Time.deltaTime);
